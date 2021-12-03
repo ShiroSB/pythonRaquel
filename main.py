@@ -26,7 +26,7 @@ def main():
         print(lista[k:z])
         k += 6
         z += 6
-        i += 1
+        i += 2
 
 if __name__ == '__main__':
        main()
