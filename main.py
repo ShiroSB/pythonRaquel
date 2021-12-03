@@ -1,16 +1,32 @@
-# This is a sample Python script.
+def main():
 
-# Press Mayús+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+    lista = list()
+    code = codee()
+    i = 0
+    k = 2
+    z = 3
+    x = int(input("Introduce la cantidad de registros que quieres ingresar"))
+    while x < 1:
+     x = int(input("Introduce la cantidad de registros que quieres ingresar"))
+    for y in range(x):
+        nombre = (input("Introduce tu nombre : "))
+        lista.append(nombre[:2])
+        apellido = (input("Introduce tu apellido : "))
+        lista.append(apellido[:2])
+        apellido2 = (input("Introduce tu 2do apellido : "))
+        code.append(nombre[:2]+apellido[:2]+apellido2[:2])
+        telefono.append(input("Introduce tu telefono : "))
+        edad.append(int(input("Introduce tu edad : ")))
+        contacto = (int(input("Contacto T/F")))
+    while contacto < 0 or contacto > 1:
+         contacto = (int(input("Contacto T/F")))
+    lista.append(contacto)
 
+    while i < x:
+        print(lista[k:z])
+        k += 6
+        z += 6
+        i += 1
 
-def print_hi():
-    # Use a breakpoint in the code line below to debug your script.
-    print('Hi')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    main()
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+       main()
